@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="sidebar">
+        <p id="menu">MENU</p>
+        <a href="tax calculator.html" id="home">HOME</a><br>
+        <a href="#ABOUT" id="about">ABOUT</a><br>
+        <a href="taxcalccontacts.html" id="contact">CONTACT</a>
+        
+      </div>
+        
+<form action="tax calculator.html"method="GET" id="form">
+    <label for="login" id="login">LOGIN</label><br>
+    <label for="username" >Username</label><br>
+    <input type="text" id="uname" placeholder="enter username" ><br>
+    <label for="password">password</label><br>
+    <input type="password" id="pass" placeholder="password" required><br>
+    <span id="message">use the door to enter and dont touch the windows</span>
+
+</form><br>
+<div class="house">
+    <input type="text" name="" class="window" id="window1" value="😴"  onmouseover="return alatwin1();">
+    <a rel="noreferrer noopener" target="_blank" href="tax calculator.html"><input type="submit" name="" id="door" value="."  onclick="return validate();"></a>
+    <input type="none" name="" class="window" id="window2" value="👽" onmouseover="return alatwin2()">
+</div>
+
+<div id="caption">
+    <caption id="caption">VerckysInc.</caption><br><caption>copyright©2021</caption>
+    </div>
+
+    <address>
+        <a href="mailto:Vrcabayo@gmail.com" id="emaddress">Send us an Email</a>
+    </address>
+
+
+
+
+    <style>
+        #home,#about,#contact,#menu{margin-right:1090px;
+color: white; font-family: fantasy; font-size: 13pt;}
+
+#contact:hover{margin-top: 20px;color:darkorange;}#about:hover{color:dodgerblue;}
+#home:hover{color:gold;}
+body{
+    background-color: gray;
+    margin-left: 70px;
+}
+#uname,#pass{height:29px; margin-bottom:10px;
+background-color:gray; color:skyblue;font-size: 15pt; border-bottom-width:2px;
+outline:blue; border-top: none; border-color:skyblue; border-right: none; border-left: none;}
+#pass{color: crimson;}
+.window{
+    color:whitesmoke;
+    font-size:30pt;
+
+}
+input:hover{
+    background-color: ivory;
+    color: green;
+}
+.window{
+    background-color: white;
+    width: 100px;
+    height: 60px;
+    margin: 50px;
+}
+#window1{background-color: black;}
+#window1:hover{background-color:blanchedalmond;}
+#door{
+background-color:tomato;
+height: 150px;
+width: 100px;
+margin-left: 10px;
+margin-top: 300px;
+font-size:40pt;
+text-align: right;
+border-style: solid;
+border-color: indigo;
+}
+#door:hover{background-color: cornsilk;}
+.house{
+    margin-left: 300px;
+    position: static;
+}
+#form{margin-top:10px;
+    margin-left: 500px;
+align-content: center;
+position:absolute;
+margin-bottom: 100px;
+}
+label{
+    position:relative;
+    font-family: fantasy;
+    font-size: 25pt;
+}
+#login{
+    margin-left: 50px;
+    color: springgreen;
+}
+#message{
+    margin-top: 50px;
+    color:snow;
+    font-size: 21pt;
+    margin-right: 24px;
+}
+#caption {
+    font-size: 11pt;
+  font-weight: 400;
+  font-family: cursive;
+  color: whitesmoke;
+  margin-top: 5px;
+  margin-left: 1090px;
+}
+#emaddress{
+    font-family:cursive;
+    margin-left: 1090px;
+    color: whitesmoke;
+    font-size: 10pt;
+}
+#uname::placeholder{
+    color:lightgreen;
+}
+#pass::placeholder{
+    color:lightsteelblue;
+}
+    </style>
+
+
+<script>
+    function alatwin1(){
+        let a="verckys says get the hell out of the window and use the DOOR!🙄";
+alert(a);
+return false;
+}
+function alatwin2(){
+    let b="i agree with verckys,just use the door!🤨"
+alert(b)
+}
+
+document.getElementById("uname").value;
+document.getElementById("pass").value;
+function validate(){
+if(uname.value!=="verckys orwa"&&pass.value!=="mypassword"){
+    document.querySelector("span").innerHTML="stop trying to hack my invention enter the correct credentials to verify that you are HIM you will therefore not enter😡";
+    return false;
+}
+else{
+    return true;
+}
+}
+</script>
+</body>
+</html>

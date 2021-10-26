@@ -1,0 +1,186 @@
+<!DOCTYPE html >
+<html lang="en" onload="return validate">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="call to action including both keywords"/>
+    <meta name="canonical" href="taxcalculator.html"/>
+    <title>TAXCALCULATOR</title>
+</head>
+<body>
+    <link rel="stylesheet" href="taxcalc.js">
+<link rel="stylesheet" href="taxcal.css">
+    
+    <div class="sidebar">
+      <p id="menu">MENU</p>
+      <a rel="noopener noreferrer" target="_blank" href="tax calculator.html" id="home">HOME</a><br>
+      <a href="#ABOUT" id="about">ABOUT</a><br>
+      <a href="taxcalccontacts.html" id="contact">CONTACT</a>
+      <a href="taxcalcLogin.html" id="contact">SIGN-UP</a>
+
+    </div>
+    <div>
+        <form id="form">
+          <div>
+            <h1>TAX CALCULATOR🧮💲💰</h1>
+        </div>
+            <input type="text" value=""  disabled id="res" ><input type="text" value="" disabled id="res2"><br>
+        <label for="price"  id="pricelabel">Enter Net Salary👉🏾</label>
+        <input type="text" id="price" value="">
+        <label for="calculate" onsubmit=></label>
+        <input type="submit" id="submit" value="Calculate" onclick="return par()">
+        <button type="reset"  id="reset" >reset</button><br>
+        <span></span>
+<div id="caption">
+<caption id="caption">VerckysInc.</caption><br><caption id="copyright">copyright©2021</caption>
+</div>
+<address>
+  <a href="mailto:Vrcabayo@gmail.com" id="emaddress">Send us an Email</a>
+</address>
+       <!---- <div class="buttons">
+        <input type="button" value="1" > <input type="button" value="2"> <input type="button" value="3"><br>
+        <input type="button" value="4">  <input type="button" value="5"> <input type="button" value="6"><br>
+        <input type="button" value="7">   <input type="button" value="8"> <input type="button" value="9"><br>
+        <input type="button" value="0">
+         </div> -->
+
+        <p style="color: red;"></p>
+        </form>
+</div>
+<script>
+  
+  date.getFullYear();
+  document.querySelector('span').innerHTML=new Date();
+    document.getelementbyid("res").value;
+    document.getelementbyid("res2").value;
+        document.getElementById("price").value;
+function par(){
+    var tax1=(price.value*15/100);
+    var bs1=price.value-tax1;
+    var tax2=(price.value*10/100);
+    var bs2=price.value-tax2;
+    if(price.value>=20000&&price.value!==null&&price.value!==""){
+   res.value=document.querySelector('input').innerHTML="\your tax is>>"+tax1; 
+   res2.value=document.querySelector('input').innerHTML="your basic salary is>>"+bs1;
+return false;
+    }
+    else if(price.value<20000&&price.value!==null&&price.value!=="") {
+        res.value=document.querySelector('input').innerHTML="\tyour tax is>>"+tax2 ;
+        res2.value=document.querySelector('input').innerHTML="basic salary is>>"+bs2;
+        return false;
+    }
+    else{
+              alert("PLEASE ENTER A NUMERICAL VALUE");
+        return false;
+    }
+}
+
+function validate(){
+if(uname.value!=="verckys orwa"&&pass.value!=="mypassword"){
+    document.querySelector("span").innerHTML="stop trying to hack my invention";
+    return false;
+}
+else if(pass.value==null||pass.value==""||uname.value==null||uname==""){
+    document.querySelector("span").innerHTML="validate";
+return false;
+}
+else{
+    return true;
+}
+}
+</script>
+
+<style>
+    body {
+  background-color: dimgray;
+}
+h1 {
+  margin-left: 350px;
+  font-family: fantasy;
+  color: darksalmon;
+}
+#submit {
+  color: cornsilk;
+  background-color: brown;
+  height: 35px;
+  border-radius: 25px;
+}
+#res {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: crimson;
+  width: 290px;
+  text-align: center;
+  height: 150px;
+  margin-left: 135px;
+  margin-bottom: 20px;
+}
+#res2 {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: skyblue;
+  width: 290px;
+  text-align: center;
+  height: 150px;
+  margin-left: 135px;
+  margin-bottom: 20px;
+}
+#reset {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 25px;
+  margin-left: 30px;
+  height: 35px;
+  border-radius: 25px;
+}
+#caption {
+  font-weight: 420;
+  font-family: cursive;
+  color: whitesmoke;
+  margin-top:140px;
+  margin-left: 20px;
+}
+#price {
+  margin-left: 60px;
+  margin-right: 10px;
+  color: black;
+  background-color: darkcyan;
+  height: 20px;
+}
+#pricelabel {
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 200px;
+}
+.sidebar{
+  display:list-item;
+  position: absolute;height: 50pc;
+}
+#home,#about,#contact,#menu{margin-left:1090px;
+color: white; font-family: fantasy; font-size: 33pt; 
+}
+#contact:hover{margin-top: 50px;color:darkorange;}#about:hover{color:dodgerblue;}
+#home:hover{color:gold;}
+#form{
+  position:fixed;
+}
+#menu{position:relative;}
+
+#emaddress{
+  font-family:cursive;
+  margin-left: 20px;margin-top: 20px;
+  color: whitesmoke;
+    font-size: 10pt;
+}
+span{
+  position: absolute;
+  margin-top: 250px;margin-left: 20px;
+  color: aliceblue;
+
+}
+</style>
+    
+
+</body>
+</html>
